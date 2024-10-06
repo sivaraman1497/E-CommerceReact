@@ -118,3 +118,8 @@ button:focus-visible {
   flex: 2; /* Make the slider take more space */
   margin: 10px;
 }
+
+.addToCartDiv:hover
+{
+  transform: translate(0px, -20px);
+}

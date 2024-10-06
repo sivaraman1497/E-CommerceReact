@@ -28,6 +28,8 @@ function ViewAllProducts()
 
 function FlashSaleProductItems()
 {
+    const [hovered, isHovered] = useState(true);
+
     function changeColorMouseEnter(e)
     {
         let currentElement = e.target;
@@ -40,6 +42,15 @@ function FlashSaleProductItems()
         currentElement.setAttribute('fill', 'white');
     }
 
+    function AddToCart()
+    {
+        return (
+            <>
+                <button>Link</button>
+            </>
+        )
+    }
+
     const productItems = [];
 
     for(let i = 0; i<5; i++)
@@ -48,7 +59,12 @@ function FlashSaleProductItems()
             <div key={i} className="p-2">
                 {
                     <div className="relative">
-                        <img className="product-image" src={iphone}/>
+                        <img className="product-image" src={iphone} onMouseOver={() => {
+                                
+                            }}/>
+                        
+
+                        <div className="addToCartDiv">Hi man</div>
 
                         <a className="addToCartLink absolute top-2 right-3 cursor-pointer" onClick={() =>{
                             console.log(i);
@@ -56,11 +72,11 @@ function FlashSaleProductItems()
                             <CiHeart className="addToCartIcon text-[#ffffff] text-[25px]" onMouseEnter={changeColorMouseEnter} onMouseLeave={changeColorMouseLeave} />
                         </a>
 
-                        <a className="wishlistLink absolute top-10 right-3 cursor-pointer" onClick={() =>{
+                        {/* <a className="wishlistLink absolute top-10 right-3 cursor-pointer" onClick={() =>{
                             console.log(i);
                         }}>
                             <CiShoppingCart className="wishlistIcon text-[#ffffff] text-[25px]" onMouseEnter={changeColorMouseEnter} onMouseLeave={changeColorMouseLeave}/>
-                        </a>
+                        </a> */}
 
                     </div>
                 }
