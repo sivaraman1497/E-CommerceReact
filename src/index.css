@@ -121,5 +121,5 @@ button:focus-visible {
 
 .addToCartDiv:hover
 {
-  transform: translate(0px, -20px);
+  transform: translate(0px, -10px);
 }

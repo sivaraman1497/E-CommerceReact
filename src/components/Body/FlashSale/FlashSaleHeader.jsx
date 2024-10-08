@@ -18,7 +18,7 @@ function FlashSaleHeaderTime()
     return (
         <div className="columns-3 text-center p-4">
             <div className="w-full">
-                Flash Sale
+                Flash Sales
             </div>
 
             <div className="w-full">
