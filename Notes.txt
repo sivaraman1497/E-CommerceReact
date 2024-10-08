@@ -1,3 +1,4 @@
 useState
 Tailwind css
 react-slick slick-carousel
+material tailwind / tailwind react
