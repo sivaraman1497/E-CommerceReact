@@ -1,7 +1,7 @@
 function FlashSaleHeading()
 {
     return (
-        <div className="columns-3 text-center">
+        <div className="columns-3 text-left pl-4">
             <div className="w-full">
                 Today's
             </div>
@@ -16,7 +16,7 @@ function FlashSaleHeading()
 function FlashSaleHeaderTime()
 {
     return (
-        <div className="columns-3 text-center p-4">
+        <div className="columns-3 text-left pt-4 pl-4">
             <div className="w-full">
                 Flash Sales
             </div>

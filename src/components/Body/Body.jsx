@@ -1,6 +1,8 @@
 import SideBar from "./SideBar/SideBar";
 import BannerSlider from "../Banner/BannerSlider";
 import FlashSale from "./FlashSale/FlashSale";
+import BrowseByCategoryHeader from "./BrowseByCategory/BrowseByCategoryHeader";
+import BrowseByCategory from "./BrowseByCategory/BrowseByCategory";
 
 export default function Body() {
   return (
@@ -18,6 +20,11 @@ export default function Body() {
 
         <div>
             <FlashSale/>
+        </div>
+
+        <div>
+            <BrowseByCategoryHeader/>
+            <BrowseByCategory/>
         </div>
     </>
   );

@@ -73,53 +73,78 @@ button:focus-visible {
 @tailwind utilities;
 
 .slick-slider.slick-initialized {
-  /* height: 30rem; */
-  width: 100%;
-  /* margin-left: 15rem; */
+    /* height: 30rem; */
+    width: 100%;
+    /* margin-left: 15rem; */
 }
 
 .bannerImage {
-	max-width: 100%;
+    max-width: 100%;
     /* height: 25rem; */
     width: 100%;
 }
 
-.bannerImage-container
-{
-	display:flex!important;
+.bannerImage-container {
+    display: flex !important;
 }
 
-.slick-prev:before, .slick-next:before
-{
-	color:red;
+.slick-prev:before,
+.slick-next:before {
+    color: red;
 }
 
-.SidebarItems
-{
-	padding-top: 5px;
-	height: 21rem;
-	border-right: 1px solid black;
+.SidebarItems {
+    padding-top: 5px;
+    height: 21rem;
+    border-right: 1px solid black;
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align items at the top */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Align items at the top */
 }
 
 .column {
-  flex: 1; /* Allow columns to grow equally */
-  padding: 20px;
-  background-color: #f0f0f0; /* Light background for columns */
-  margin: 10px; /* Spacing between columns */
+    flex: 1;
+    /* Allow columns to grow equally */
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Light background for columns */
+    margin: 10px;
+    /* Spacing between columns */
 }
 
 .slider {
-  flex: 2; /* Make the slider take more space */
-  margin: 10px;
+    flex: 2;
+    /* Make the slider take more space */
+    margin: 10px;
 }
 
-.addToCartDiv:hover
+.addToCartDiv:hover {
+    transform: translate(0px, -10px);
+}
+
+.browseByCategoryIcons {
+    color: black;
+    font-size: 100px;
+    transition: ease-in-out;
+    animation-delay: 50ms;
+    animation-duration: 300ms;
+}
+
+.browseByCategoryIcons:hover {
+    transform: scale(0.9);
+}
+
+.productItemCard
 {
-  transform: translate(0px, -10px);
+    border: 1px solid #424040;
+    padding: 11px;
+}
+
+.productItemCard:hover *
+{
+    color:white;
 }
